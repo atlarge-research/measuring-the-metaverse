@@ -28,7 +28,10 @@ try {
         adb shell "cat /proc/meminfo" >> meminfo.log
         adb shell "cat /proc/stat" >> stat.log
         adb shell "cat /proc/loadavg" >> loadavg.log
+
         adb shell "dumpsys battery" >> battery.log
+        adb shell "dumpsys OVRRemoteService" >> OVRRemoteService.log
+        adb shell "dumpsys CompanionService" >> CompanionService.log
 
         $End = [System.Diagnostics.Stopwatch]::GetTimestamp()
         $i = $i + 1
