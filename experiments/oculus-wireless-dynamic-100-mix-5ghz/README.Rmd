@@ -9,6 +9,8 @@ output:
 
 # Description
 
+**Some metric collection failed! See version 2 of this experiment!**
+
 Jesse plays Crab Rave on the Meta Quest at home, but metric collection is fixed!
 
 I play the same song two times.
