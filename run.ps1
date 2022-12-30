@@ -16,6 +16,13 @@ try {
     While ($True) {        
         [System.DateTime]::Now.ToString("HH:mm:ss.fff")
 
+        if ($VrJob.State -ne "Running") {
+            $VrJob = adb logcat -s VrApi > logcat_VrApi.log &
+        }
+        if ($HostJob.State -ne "Running") {
+            $HostJob = python .\sample-host-metrics.py &
+        }
+
         adb shell "cat /proc/uptime" >> uptime.log
         adb shell "cat /proc/net/dev" >> net_dev.log
         adb shell "cat /proc/meminfo" >> meminfo.log
