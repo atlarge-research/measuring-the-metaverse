@@ -43,10 +43,13 @@ def main():
 
             write_sys_metrics(f_sys)
 
-            i += 1
             end_loop = datetime.now().timestamp()
-            start_next = start + i
-            sleep_time = start_next - end_loop
+            sleep_time = -1
+            
+            while sleep_time < 0:
+                i += 1
+                start_next = start + i
+                sleep_time = start_next - end_loop
             time.sleep(sleep_time)
 
 
