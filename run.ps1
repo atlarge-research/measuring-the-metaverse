@@ -17,9 +17,11 @@ try {
         [System.DateTime]::Now.ToString("HH:mm:ss.fff")
 
         if ($VrJob.State -ne "Running") {
+            Write-Host "Oh no! Restarting adb logcat"
             $VrJob = adb logcat -s VrApi > logcat_VrApi.log &
         }
         if ($HostJob.State -ne "Running") {
+            Write-Host "Oh no! Restarting python script"
             $HostJob = python .\sample-host-metrics.py &
         }
 
