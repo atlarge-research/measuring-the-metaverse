@@ -4,7 +4,8 @@
 adb shell "cat /proc/version" > version.log
 adb shell "cat /proc/cpuinfo" > cpuinfo.log
 
-$job = adb logcat -s VrApi > logcat_VrApi.log &
+$VrJob = adb logcat -s VrApi > logcat_VrApi.log &
+$HostJob = python .\sample-host-metrics.py &
 
 $Freq = [System.Diagnostics.Stopwatch]::Frequency
 
@@ -28,6 +29,8 @@ try {
     }
 }
 finally {
-    Write-Host "Stopping logcat..."
-    Stop-Job $job
+    Write-Host "Stopping VR monitor..."
+    Stop-Job $VrJob
+    Write-Host "Stopping host monitor..."
+    Stop-Job $HostJob
 }
