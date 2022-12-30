@@ -13,7 +13,7 @@ $Start = [System.Diagnostics.Stopwatch]::GetTimestamp()
 $i = 0
 
 try {
-    While ($True) {        
+    While ($True) {
         [System.DateTime]::Now.ToString("HH:mm:ss.fff")
 
         if ($VrJob.State -ne "Running") {
@@ -34,9 +34,12 @@ try {
         adb shell "dumpsys CompanionService" >> CompanionService.log
 
         $End = [System.Diagnostics.Stopwatch]::GetTimestamp()
+        Do {
         $i = $i + 1
         $Next = $Start + ($i * $Freq)
-        [System.Threading.Thread]::Sleep(($Next - $End) * (1000.0 / $Freq))
+        $Sleep = $Next - $End
+        } While($Sleep -lt 0)
+        [System.Threading.Thread]::Sleep($Sleep * (1000.0 / $Freq))
     }
 }
 finally {
