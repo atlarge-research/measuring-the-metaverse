@@ -9,7 +9,7 @@ output:
 
 # Description
 
-Jesse plays Crab Rave on the Meta Quest at home.
+Half-Life Alyx using Steam VR and a **wireless** Steam Link connection.
 
 # Results
 

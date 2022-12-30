@@ -9,7 +9,8 @@ output:
 
 # Description
 
-Jesse plays Crab Rave on the Meta Quest at home.
+Half-Life Alyx using Steam VR and a **wireless** Steam Link connection.
+I play the game upstairs, while the router is downstairs. This has a big impact of the performance! See the FPS drops!
 
 # Results
 

@@ -9,7 +9,7 @@ output:
 
 # Description
 
-Jesse plays Crab Rave on the Meta Quest at home.
+Jesse plays Crab Rave on the Meta Quest at home, but some metric collection failed. See the different values on the horizontal axis for the different plots!
 
 # Results
 

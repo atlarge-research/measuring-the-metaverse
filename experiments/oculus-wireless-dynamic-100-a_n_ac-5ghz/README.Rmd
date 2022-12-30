@@ -9,7 +9,11 @@ output:
 
 # Description
 
-Jesse plays Crab Rave on the Meta Quest at home.
+Jesse plays Crab Rave on the Meta Quest at home, but metric collection is fixed!
+
+I play the same song two times.
+I use Oculus with a **wireless link** in this experiment.
+Network set to a/n/ac at 5 GHz.
 
 # Results
 

@@ -9,7 +9,10 @@ output:
 
 # Description
 
-Jesse plays Crab Rave on the Meta Quest at home.
+Jesse plays Crab Rave on the Meta Quest at home, but metric collection is fixed!
+
+The game runs on the headset.
+I play the same song two times.
 
 # Results
 
