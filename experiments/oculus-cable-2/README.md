@@ -3,7 +3,11 @@ Test Experiment
 
 # Description
 
-Jesse plays Crab Rave on the Meta Quest at home.
+Jesse plays Crab Rave on the Meta Quest at home, but metric collection
+is fixed\!
+
+I play the same song two times. I use Oculus with the link cable in this
+experiment.
 
 # Results
 
@@ -39,7 +43,7 @@ data %>%
 ggplot(aes(x = ts, y=fps)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/frame_rate-1.svg)<!-- -->
@@ -56,7 +60,7 @@ data %>%
 ggplot(aes(x = ts, y=battery)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 }
 ```
 
@@ -72,7 +76,7 @@ data %>%
 ggplot(aes(x=ts, y=level, color=hand)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 }
 ```
 
@@ -87,7 +91,7 @@ data %>%
 ggplot(aes(x = ts, y=cpu_util)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/cpu_usage-1.svg)<!-- -->
@@ -101,7 +105,7 @@ data %>%
 ggplot(aes(x = ts, y=gpu_util)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/gpu_usage-1.svg)<!-- -->
@@ -115,7 +119,7 @@ data %>%
 ggplot(aes(x = ts, y=mem_usage)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/memory_usage-1.svg)<!-- -->
@@ -129,7 +133,7 @@ data %>%
 ggplot(aes(x = ts, y=temp)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/temperature-1.svg)<!-- -->
@@ -154,7 +158,7 @@ ggplot(aes(x = ts, y=bytes_rx)) +
 geom_line() +
 ylab("KB/s") +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
     ## Warning: Removed 1 row(s) containing missing values (geom_path).
@@ -170,7 +174,7 @@ ggplot(aes(x = ts, y=bytes_tx)) +
 geom_line() +
 ylab("KB/s") +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
     ## Warning: Removed 1 row(s) containing missing values (geom_path).
@@ -185,7 +189,7 @@ mutate(packets_rx = packets_rx - lag(packets_rx)) %>%
 ggplot(aes(x = ts, y=packets_rx)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
     ## Warning: Removed 1 row(s) containing missing values (geom_path).
@@ -200,7 +204,7 @@ mutate(packets_tx = packets_tx - lag(packets_tx)) %>%
 ggplot(aes(x = ts, y=packets_tx)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
     ## Warning: Removed 1 row(s) containing missing values (geom_path).
