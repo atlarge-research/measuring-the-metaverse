@@ -38,10 +38,43 @@ data <- tibble(fps) %>% mutate(fps = as.numeric(fps)) %>% mutate(ts = 0:(n()-1))
 data %>%
 ggplot(aes(x = ts, y=fps)) +
 geom_line() +
+ylim(0, NA) +
 theme_half_open()
 ```
 
 ![](README_files/figure-gfm/frame_rate-1.svg)<!-- -->
+
+## Battery Levels
+
+### Headset
+
+``` r
+if (file.exists("battery.log")) {
+battery <- system('grep -Po "(?<=level: )[0-9]+" battery.log', intern = TRUE)
+data <- tibble(battery) %>% mutate(battery = as.numeric(battery)) %>% mutate(ts = 0:(n()-1)) %>% select(ts, everything())
+data %>%
+ggplot(aes(x = ts, y=battery)) +
+geom_line() +
+ylim(0, NA) +
+theme_half_open()
+}
+```
+
+![](README_files/figure-gfm/battery_headset-1.svg)<!-- -->
+
+### Controllers
+
+``` r
+if (file.exists("OVRRemoteService.log")) {
+battery <- system("grep -Po '(?<=Type:)\\s+(Left|Right),.+Battery:\\s+[0-9]+(?=%)' OVRRemoteService.log | tr -s ' ' | sed -e \'s/^[[:space:]]*//\' -e \'s/\\n[[:space:]]*//\' | cut -d' ' -f 1,5", intern=TRUE)
+data <- tibble(battery) %>% separate(battery, c("hand", "level"), convert = TRUE) %>% group_by(hand) %>% mutate(ts = 0:(n()-1)) %>% select(ts, everything())
+data %>%
+ggplot(aes(x=ts, y=level, color=hand)) +
+geom_line() +
+ylim(0, NA) +
+theme_half_open()
+}
+```
 
 ## CPU Usage
 
@@ -51,6 +84,7 @@ data <- tibble(cpu_util) %>% mutate(cpu_util = 100 * as.numeric(cpu_util)) %>% m
 data %>%
 ggplot(aes(x = ts, y=cpu_util)) +
 geom_line() +
+ylim(0, NA) +
 theme_half_open()
 ```
 
@@ -64,6 +98,7 @@ data <- tibble(gpu_util) %>% mutate(gpu_util = 100 * as.numeric(gpu_util)) %>% m
 data %>%
 ggplot(aes(x = ts, y=gpu_util)) +
 geom_line() +
+ylim(0, NA) +
 theme_half_open()
 ```
 
