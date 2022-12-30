@@ -1,0 +1,6885 @@
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5528527
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4304
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5528527
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4304
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5527939
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4302
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5527787
+  status: 2
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5527848
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4352
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5527848
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4352
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5527848
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4352
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5527848
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4352
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5527848
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4352
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5527848
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4352
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5527848
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4352
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5527848
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4352
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5526342
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5526342
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5526342
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5526342
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1200000
+  Max charging voltage: 5000000
+  Charge counter: 5526342
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5525465
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4303
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5525465
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4303
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5525465
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4303
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5525061
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4298
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5525061
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4298
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5524873
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4305
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5524873
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4305
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5524873
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4305
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5524873
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4305
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5524873
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4305
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5524873
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4305
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5524263
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5524263
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5524184
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5524184
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5524022
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5524022
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5524022
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5524022
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523723
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523723
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523723
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523723
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523723
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523723
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523369
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4309
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523284
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4310
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523284
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4310
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523149
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4314
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523149
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4314
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523149
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4314
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523149
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4314
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523149
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4314
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523149
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4314
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5523149
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4314
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5522527
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4306
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5522453
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5522453
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5522453
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5522276
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4313
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5522276
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4313
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5522276
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4313
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5522276
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4313
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5522276
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4313
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5521934
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4315
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5521876
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5521876
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5521876
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5521876
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5521876
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5521876
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5521876
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5521265
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5521265
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5521265
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4312
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5521114
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5521114
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5521114
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5521114
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5521114
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5520654
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5520654
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5520654
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5520654
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5520654
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4311
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5520293
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4294
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5520293
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4294
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5520293
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4294
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5519693
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5519693
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5519693
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5519693
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5519693
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5519693
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1250000
+  Max charging voltage: 5000000
+  Charge counter: 5519693
+  status: 4
+  health: 2
+  present: true
+  level: 100
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518622
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4293
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518622
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4293
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518547
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4296
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518547
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4296
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518547
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4296
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518547
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4296
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518547
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4296
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518547
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4296
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518547
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4296
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5518547
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4296
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5517587
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5517587
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5517587
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4297
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5517050
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4299
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5517050
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4299
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5516861
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4298
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5516861
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4298
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5516861
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4298
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5516512
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4295
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5516512
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4295
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5516366
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5516366
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5516366
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5516366
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5516366
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5516366
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5515398
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5515398
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5515398
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5515398
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5514896
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4294
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5514896
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4294
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5514896
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4294
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5514896
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4294
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5514341
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5514341
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5514341
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5514341
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5514341
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513724
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513413
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513413
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513190
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513190
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513190
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513190
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513190
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513190
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5513190
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5512276
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4287
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5512141
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5512014
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5512014
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5512014
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5512014
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5512014
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5512014
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5512014
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5512014
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5510806
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5510632
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5510632
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5510632
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5510632
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5510632
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5510632
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5510632
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1300000
+  Max charging voltage: 5000000
+  Charge counter: 5509444
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5509293
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5509293
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5509153
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5509153
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5509153
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5509153
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5509153
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5508347
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5508347
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5508347
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5508347
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5508347
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507798
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507529
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507529
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4290
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507252
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507252
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507252
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507252
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507252
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507252
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5507252
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4289
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5506314
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5506007
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5506007
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5506007
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5506007
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5506007
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5506007
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5505124
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5505124
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5505124
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5504690
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5504690
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5504690
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5504690
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5504690
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5504690
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5504690
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5504690
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5503561
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5503561
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5503364
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5503364
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5503364
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5503364
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5503364
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5503364
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4291
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5502531
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5502531
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5502531
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5502531
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501980
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501980
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501980
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501549
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501436
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501436
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501436
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501436
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501436
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5501436
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4288
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5500635
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4287
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5500635
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4287
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5500306
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5500306
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5500306
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5499878
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4287
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499736
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499736
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499736
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499736
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499116
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499116
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499116
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499116
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499116
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499116
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499116
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499116
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5499116
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5497817
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5497675
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5497675
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5497675
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5497675
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5497675
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5497675
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5496805
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5496666
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5496666
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5496666
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4286
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5496282
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5496282
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5496282
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5496282
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5496282
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5495600
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5495600
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5495600
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5495600
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5495092
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494962
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494962
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494962
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494521
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494521
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494521
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494521
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494521
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494521
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5494521
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493559
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493430
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493430
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493430
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493430
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493430
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493430
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493430
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493430
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5493430
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5492074
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5491950
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5491950
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5491950
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5491950
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5491950
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5491950
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5491950
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5491022
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5491022
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5490711
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5490711
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5490711
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5490711
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5490711
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5490711
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5489884
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5489884
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5489884
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5489884
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5489237
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5489237
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5489237
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5489237
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5488654
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5488654
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5488654
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5488654
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5488654
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5488654
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5487825
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5487825
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5487545
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5487545
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5487545
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5487545
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5487545
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4282
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5486668
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5486668
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5486668
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5486412
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5486412
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5486412
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5486030
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5486030
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5486030
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5486030
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5486030
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5486030
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4285
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5485071
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4268
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5484918
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5484918
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5484918
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5484918
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5484918
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5484918
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5484918
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5483898
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5483898
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5483898
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5483475
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5483475
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5483475
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5483475
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5483475
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5482623
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5482623
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5482623
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5482623
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5482623
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4281
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5482045
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5482045
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5482045
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5481659
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5481659
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5481659
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5481659
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5481659
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5481659
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5481659
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5480684
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5480517
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5480517
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5480517
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5480517
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5480517
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5480517
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5480517
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479461
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479177
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479177
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479177
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479177
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479177
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479177
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479177
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479177
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5479177
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5478103
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5478103
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4276
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5477826
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4279
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5477658
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5477658
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5477658
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5477658
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5477658
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4272
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5476963
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5476963
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5476963
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5476963
+  status: 4
+  health: 2
+  present: true
+  level: 99
+  scale: 100
+  voltage: 4275
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5476326
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4270
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5476326
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4270
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5476326
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4270
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5476326
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4270
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5475738
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5475738
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5475306
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5475306
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5475306
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1450000
+  Max charging voltage: 5000000
+  Charge counter: 5475306
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474887
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474887
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474571
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474571
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474571
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474571
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474571
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474571
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474571
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5474571
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4277
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5473419
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5473419
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5473419
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5473419
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5473419
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5473419
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5473419
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5473419
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4278
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5472341
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4279
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5472341
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4279
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5472233
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5472233
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5472233
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5472233
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471807
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471807
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471807
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4280
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471507
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4274
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471507
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4274
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471507
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4274
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471154
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471154
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471154
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471154
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5471154
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4284
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5470587
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4276
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1400000
+  Max charging voltage: 5000000
+  Charge counter: 5470587
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4276
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5470393
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5470393
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5470393
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4283
+  temperature: 202
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469960
+  status: 4
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4283
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469726
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4279
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469726
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4279
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469673
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4295
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469673
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4295
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469673
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4295
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469673
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4295
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469673
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4295
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469673
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4295
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1350000
+  Max charging voltage: 5000000
+  Charge counter: 5469673
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4295
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1550000
+  Max charging voltage: 5000000
+  Charge counter: 5468963
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4285
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1550000
+  Max charging voltage: 5000000
+  Charge counter: 5468835
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4293
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1550000
+  Max charging voltage: 5000000
+  Charge counter: 5468835
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4293
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1550000
+  Max charging voltage: 5000000
+  Charge counter: 5468835
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4293
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1550000
+  Max charging voltage: 5000000
+  Charge counter: 5468835
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4293
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1550000
+  Max charging voltage: 5000000
+  Charge counter: 5468835
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4293
+  temperature: 200
+  technology: Li-ion
+Current Battery Service state:
+  AC powered: true
+  USB powered: false
+  Wireless powered: false
+  Max charging current: 1550000
+  Max charging voltage: 5000000
+  Charge counter: 5468835
+  status: 2
+  health: 2
+  present: true
+  level: 98
+  scale: 100
+  voltage: 4293
+  temperature: 200
+  technology: Li-ion
