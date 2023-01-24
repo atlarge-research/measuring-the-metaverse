@@ -3,9 +3,11 @@ Test Experiment
 
 # Description
 
-Jesse plays Crab Rave on the Meta Quest at home.
+Jesse plays Crab Rave on the Meta Quest at home, but metric collection
+is fixed\!
 
-# Results
+I play the same song two times. I use Oculus with a **wireless link** in
+this experiment. Network set to b/g/n at 2.4 GHz. \# Results
 
 ``` r
 library(tidyverse)
@@ -38,10 +40,45 @@ data <- tibble(fps) %>% mutate(fps = as.numeric(fps)) %>% mutate(ts = 0:(n()-1))
 data %>%
 ggplot(aes(x = ts, y=fps)) +
 geom_line() +
-theme_half_open()
+ylim(0, NA) +
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/frame_rate-1.svg)<!-- -->
+
+## Battery Levels
+
+### Headset
+
+``` r
+if (file.exists("battery.log")) {
+battery <- system('grep -Po "(?<=level: )[0-9]+" battery.log', intern = TRUE)
+data <- tibble(battery) %>% mutate(battery = as.numeric(battery)) %>% mutate(ts = 0:(n()-1)) %>% select(ts, everything())
+data %>%
+ggplot(aes(x = ts, y=battery)) +
+geom_line() +
+ylim(0, NA) +
+theme_half_open() + background_grid()
+}
+```
+
+![](README_files/figure-gfm/battery_headset-1.svg)<!-- -->
+
+### Controllers
+
+``` r
+if (file.exists("OVRRemoteService.log")) {
+battery <- system("grep -Po '(?<=Type:)\\s+(Left|Right),.+Battery:\\s+[0-9]+(?=%)' OVRRemoteService.log | tr -s ' ' | sed -e \'s/^[[:space:]]*//\' -e \'s/\\n[[:space:]]*//\' | cut -d' ' -f 1,5", intern=TRUE)
+data <- tibble(battery) %>% separate(battery, c("hand", "level"), convert = TRUE) %>% group_by(hand) %>% mutate(ts = 0:(n()-1)) %>% select(ts, everything())
+data %>%
+ggplot(aes(x=ts, y=level, color=hand)) +
+geom_line() +
+ylim(0, NA) +
+theme_half_open() + background_grid()
+}
+```
+
+![](README_files/figure-gfm/battery_controllers-1.svg)<!-- -->
 
 ## CPU Usage
 
@@ -51,7 +88,8 @@ data <- tibble(cpu_util) %>% mutate(cpu_util = 100 * as.numeric(cpu_util)) %>% m
 data %>%
 ggplot(aes(x = ts, y=cpu_util)) +
 geom_line() +
-theme_half_open()
+ylim(0, NA) +
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/cpu_usage-1.svg)<!-- -->
@@ -64,7 +102,8 @@ data <- tibble(gpu_util) %>% mutate(gpu_util = 100 * as.numeric(gpu_util)) %>% m
 data %>%
 ggplot(aes(x = ts, y=gpu_util)) +
 geom_line() +
-theme_half_open()
+ylim(0, NA) +
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/gpu_usage-1.svg)<!-- -->
@@ -78,7 +117,7 @@ data %>%
 ggplot(aes(x = ts, y=mem_usage)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/memory_usage-1.svg)<!-- -->
@@ -92,7 +131,7 @@ data %>%
 ggplot(aes(x = ts, y=temp)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
 ![](README_files/figure-gfm/temperature-1.svg)<!-- -->
@@ -117,7 +156,7 @@ ggplot(aes(x = ts, y=bytes_rx)) +
 geom_line() +
 ylab("KB/s") +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
     ## Warning: Removed 1 row(s) containing missing values (geom_path).
@@ -133,7 +172,7 @@ ggplot(aes(x = ts, y=bytes_tx)) +
 geom_line() +
 ylab("KB/s") +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
     ## Warning: Removed 1 row(s) containing missing values (geom_path).
@@ -148,7 +187,7 @@ mutate(packets_rx = packets_rx - lag(packets_rx)) %>%
 ggplot(aes(x = ts, y=packets_rx)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
     ## Warning: Removed 1 row(s) containing missing values (geom_path).
@@ -163,7 +202,7 @@ mutate(packets_tx = packets_tx - lag(packets_tx)) %>%
 ggplot(aes(x = ts, y=packets_tx)) +
 geom_line() +
 ylim(0, NA) +
-theme_half_open()
+theme_half_open() + background_grid()
 ```
 
     ## Warning: Removed 1 row(s) containing missing values (geom_path).

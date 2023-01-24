@@ -1,0 +1,767 @@
+---
+title: "Plots for Measuring the Metaverse Article"
+output:
+  github_document:
+    toc: yes
+    toc_depth: 1
+    dev: ["svg", "pdf"]
+---
+
+```{r setup, message = FALSE}
+
+library(tidyverse)
+library(here)
+theme_set(theme_bw())
+library(knitr)
+library(forcats)
+library(data.table)
+library(cowplot)
+library(gghighlight)
+library(zoo)
+library(RColorBrewer)
+
+saveplot <- function(filename, ...) {
+  ggsave2(filename, ...)
+  knitr::plot_crop(filename)
+}
+
+here::i_am("plots/README.Rmd")
+```
+
+# Baseline
+
+```{r baseline_fps, fig.width = 3, fig.height = 2}
+fps <- system(paste('grep -Po "(?<=FPS=)[0-9]+"', here("experiments", "headset-cable-2", "logcat_VrApi.log")), intern = TRUE)
+data <- tibble(fps) %>%
+  mutate(fps = as.numeric(fps)) %>%
+  mutate(ts = 0:(n() - 1)) %>%
+  select(ts, everything())
+data %>%
+  ggplot(aes(x = ts, y = fps)) +
+  geom_line() +
+  ylim(0, 90) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "time [s]", y = "frames per second     ")
+```
+
+```{r baseline_cpu, fig.width = 3, fig.height = 2}
+cpu <- system(paste('grep -Po "(?<=CPU%=)[0-9]+.[0-9]+"', here("experiments", "headset-cable-2", "logcat_VrApi.log")), intern = TRUE)
+data <- tibble(cpu) %>%
+  mutate(cpu = as.numeric(cpu) * 100) %>%
+  mutate(ts = 0:(n() - 1)) %>%
+  select(ts, everything())
+data %>%
+  ggplot(aes(x = ts, y = cpu)) +
+  geom_line() +
+  ylim(0, 50) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "time [s]", y = "CPU utilization     ")
+```
+
+```{r baseline_gpu, fig.width = 3, fig.height = 2}
+gpu <- system(paste('grep -Po "(?<=GPU%=)[0-9]+.[0-9]+"', here("experiments", "headset-cable-2", "logcat_VrApi.log")), intern = TRUE)
+data <- tibble(gpu) %>%
+  mutate(gpu = as.numeric(gpu) * 100) %>%
+  mutate(ts = 0:(n() - 1)) %>%
+  select(ts, everything())
+data %>%
+  ggplot(aes(x = ts, y = gpu)) +
+  geom_line() +
+  ylim(0, 100) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "time [s]", y = "GPU utilization     ")
+```
+
+```{r baseline_mem, fig.width = 3, fig.height = 2}
+mem_usage <- system(paste('grep -Po "(?<=Free=)[0-9]+"', here("experiments", "headset-cable-2", "logcat_VrApi.log")), intern = TRUE)
+data <- tibble(mem_usage) %>%
+  mutate(mem_usage = 12288 - as.numeric(mem_usage)) %>%
+  mutate(mem_usage = mem_usage / 1024) %>%
+  mutate(ts = 0:(n() - 1)) %>%
+  select(ts, everything())
+data %>%
+  ggplot(aes(x = ts, y = mem_usage)) +
+  geom_line() +
+  ylim(0, 11.5) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "time [s]", y = "memory usage [GB]     ")
+```
+
+# Local vs. Streaming
+
+```{r setup_local_vs_streaming}
+to_human_name <- function(name) {
+  if (name == "headset-cable-2") {
+    "Local"
+  } else if (name == "oculus-cable-2") {
+    "Wired"
+  } else if (name == "oculus-wireless-dynamic-100-mix-5ghz-2") {
+    "Wireless"
+  } else {
+    name
+  }
+}
+
+experiments <- c("headset-cable-2", "oculus-cable-2", "oculus-wireless-dynamic-100-mix-5ghz-2")
+start_time <- 125
+end_time <- 350
+```
+
+```{r local_vs_stream_fps_data}
+data <- NULL
+for (f in experiments) {
+  data <- system(paste('grep -Po "(?<=FPS=)[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(fps = .) %>%
+    mutate(fps = as.numeric(fps)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(data, .)
+}
+data <- data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+```{r local_vs_stream_fps}
+data %>%
+  ggplot(aes(x = ts, y = fps, color = config)) +
+  geom_vline(xintercept = start_time, color = "black") +
+  geom_vline(xintercept = end_time, color = "black") +
+  geom_line() +
+  ylim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r local_vs_stream_fps_boxplot, fig.width = 3, fig.height = 2}
+data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  ggplot(aes(x = fps, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  labs(x = "frames per second", y = "setup") +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r local_vs_stream_cpu_data}
+cpu_data <- NULL
+for (f in experiments) {
+  cpu_data <- system(paste('grep -Po "(?<=CPU%=)[0-9]+.[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(cpu_util = .) %>%
+    mutate(cpu_util = 100 * as.numeric(cpu_util)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(cpu_data, .)
+}
+cpu_data <- cpu_data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+
+```{r local_vs_stream_cpu}
+cpu_data %>%
+  ggplot(aes(x = ts, y = cpu_util, color = config)) +
+  geom_vline(xintercept = start_time, color = "black") +
+  geom_vline(xintercept = end_time, color = "black") +
+  geom_line() +
+  ylim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r local_vs_stream_cpu_boxplot, fig.width = 3, fig.height = 2}
+cpu_data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  ggplot(aes(x = cpu_util, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  labs(x = "CPU utilization [%]", y = "setup") +
+  theme_half_open() +
+  background_grid()
+```
+
+```{r local_vs_stream_gpu_data}
+
+data <- NULL
+for (f in experiments) {
+  data <- system(paste('grep -Po "(?<=GPU%=)[0-9]+.[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(gpu_util = .) %>%
+    mutate(gpu_util = 100 * as.numeric(gpu_util)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(data, .)
+}
+data <- data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+
+```{r local_vs_stream_gpu_data_line}
+data %>%
+  ggplot(aes(x = ts, y = gpu_util, color = config)) +
+  geom_vline(xintercept = start_time, color = "black") +
+  geom_vline(xintercept = end_time, color = "black") +
+  geom_line() +
+  ylim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r local_vs_stream_gpu_boxplot, fig.width = 3, fig.height = 2}
+data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  ggplot(aes(x = gpu_util, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  labs(y = "setup", x = "GPU utilization [%]") +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "none") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r network_data}
+network_data <- NULL
+for (f in experiments) {
+  network_data <- system(paste('grep -P "\\s+wlan0\\W"', here("experiments", f, "net_dev.log"), '| tr -s " " | sed -e \'s/^[[:space:]]*//\' -e \'s/\\n[[:space:]]*//\''), intern = TRUE) %>%
+    tibble(network = .) %>%
+    separate(network, c("interface", "bytes_rx", "packets_rx", "errs_rx", "drop_rx", "fifo_rx", "frame_rx", "compressed_rx", "multicast_rx", "bytes_tx", "packets_tx", "errs_tx", "drop_tx", "fifo_tx", "colls_tx", "carrier_tx", "compressed_tx"), sep = " ", convert = TRUE) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    mutate(config = f) %>%
+    bind_rows(network_data, .)
+}
+```
+
+```{r local_vs_stream_net_bytes_rx}
+network_data %>%
+  mutate(bytes_rx = 8 * (bytes_rx - lag(bytes_rx)) / 1000000) %>%
+  drop_na() %>%
+  ggplot(aes(x = ts, y = bytes_rx, color = config)) +
+  geom_line() +
+  ylab("bytes received [Mbps]") +
+  ylim(0, NA) +
+  # scale_y_continuous(trans = "log10") +
+  theme_half_open() +
+  background_grid()
+```
+
+```{r local_vs_stream_net_bytes_rx_boxplot, fig.width = 3, fig.height = 2}
+network_data %>%
+  mutate(bytes_rx = 8 * (bytes_rx - lag(bytes_rx)) / 1000000) %>%
+  drop_na() %>%
+  filter(ts >= 200 & ts <= 400) %>%
+  mutate(config = map_chr(config, to_human_name)) %>%
+  ggplot(aes(x = bytes_rx, y = config)) +
+  geom_boxplot() +
+  labs(x = "bytes received [Mbps]", y = "setup") +
+  xlim(0, 100) +
+  # scale_x_continuous(trans = "log10") +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom")
+```
+
+```{r local_vs_stream_mem_data}
+mem_data <- NULL
+for (f in experiments) {
+  mem_data <- system(paste('grep -Po "(?<=Free=)[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(mem_usage = .) %>%
+    mutate(mem_usage = 12288 - as.numeric(mem_usage)) %>%
+    mutate(mem_usage = mem_usage / 1024) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(mem_data, .)
+}
+mem_data <- mem_data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+```{r local_vs_stream_mem_line}
+mem_data %>%
+  ggplot(aes(x = ts, y = mem_usage, color = config)) +
+  geom_line() +
+  ylim(0, 11.5) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "time [s]", y = "memory usage [GB]     ")
+```
+
+```{r local_vs_stream_mem_boxplot, fig.width = 3, fig.height = 2}
+mem_data %>%
+  ggplot(aes(x = mem_usage, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "memory usage [GB]", y = "setup")
+```
+
+# Effect of WiFi Networks
+
+```{r setup_wifi_networks}
+to_human_name <- function(name) {
+  if (name == "oculus-wireless-dynamic-100-b_g_n-2_4ghz") {
+    "2.4GHz WiFi 4"
+  } else if (name == "oculus-wireless-dynamic-100-ax-5ghz") {
+    "5GHz WiFi 6"
+  } else if (name == "oculus-wireless-dynamic-100-ax-2_4ghz") {
+    "2.4GHz WiFi 6"
+  } else if (name == "oculus-wireless-dynamic-100-a_n_ac-5ghz") {
+    "5GHz WiFi 5"
+  } else if (name == "oculus-wireless-dynamic-100-mix-5ghz-2") {
+    "5GHz WiFi 5/6"
+  } else {
+    name
+  }
+}
+
+wifi_order <- c("2.4GHz WiFi 4", "5GHz WiFi 5", "5GHz WiFi 5/6", "2.4GHz WiFi 6", "5GHz WiFi 6")
+experiments <- c("oculus-wireless-dynamic-100-mix-5ghz-2", "oculus-wireless-dynamic-100-a_n_ac-5ghz", "oculus-wireless-dynamic-100-ax-2_4ghz", "oculus-wireless-dynamic-100-ax-5ghz", "oculus-wireless-dynamic-100-b_g_n-2_4ghz")
+# experiments <- c("oculus-wireless-dynamic-100-a_n_ac-5ghz", "oculus-wireless-dynamic-100-ax-2_4ghz", "oculus-wireless-dynamic-100-ax-5ghz", "oculus-wireless-dynamic-100-b_g_n-2_4ghz")
+start_time <- 125
+end_time <- 350
+```
+
+```{r wifi_networks_fps_data}
+data <- NULL
+for (f in experiments) {
+  data <- system(paste('grep -Po "(?<=FPS=)[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(fps = .) %>%
+    mutate(fps = as.numeric(fps)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(data, .)
+}
+data <- data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+```{r wifi_networks_fps}
+data %>%
+  ggplot(aes(x = ts, y = fps, color = config)) +
+  geom_vline(xintercept = start_time, color = "black") +
+  geom_vline(xintercept = end_time, color = "black") +
+  geom_line() +
+  ylim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r wifi_networks_fps_boxplot, fig.width = 3, fig.height = 2}
+data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  ggplot(aes(x = fps, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  labs(x = "frames per second ", y = "network type") +
+  theme_half_open() +
+  background_grid() +
+  # scale_x_break(c(10, 50)) +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r wifi_networks_cpu_data}
+cpu_data <- NULL
+for (f in experiments) {
+  cpu_data <- system(paste('grep -Po "(?<=CPU%=)[0-9]+.[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(cpu_util = .) %>%
+    mutate(cpu_util = 100 * as.numeric(cpu_util)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(cpu_data, .)
+}
+cpu_data <- cpu_data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+
+```{r wifi_networks_cpu}
+cpu_data %>%
+  ggplot(aes(x = ts, y = cpu_util, color = config)) +
+  geom_vline(xintercept = start_time, color = "black") +
+  geom_vline(xintercept = end_time, color = "black") +
+  geom_line() +
+  ylim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r wifi_networks_cpu_boxplot, fig.width = 3, fig.height = 2}
+cpu_data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  ggplot(aes(x = cpu_util, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  labs(x = "CPU utilization [%]", y = "network type") +
+  theme_half_open() +
+  background_grid()
+```
+
+```{r wifi_networks_gpu_data}
+
+data <- NULL
+for (f in experiments) {
+  data <- system(paste('grep -Po "(?<=GPU%=)[0-9]+.[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(gpu_util = .) %>%
+    mutate(gpu_util = 100 * as.numeric(gpu_util)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(data, .)
+}
+data <- data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+
+```{r wifi_networks_gpu_data_line}
+data %>%
+  ggplot(aes(x = ts, y = gpu_util, color = config)) +
+  geom_vline(xintercept = start_time, color = "black") +
+  geom_vline(xintercept = end_time, color = "black") +
+  geom_line() +
+  ylim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r wifi_networks_gpu_boxplot, fig.width = 3, fig.height = 2}
+data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  ggplot(aes(x = gpu_util, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  labs(y = "network type", x = "GPU utilization [%]") +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "none") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r wifi_networks_network_data}
+network_data <- NULL
+for (f in experiments) {
+  network_data <- system(paste('grep -P "\\s+wlan0\\W"', here("experiments", f, "net_dev.log"), '| tr -s " " | sed -e \'s/^[[:space:]]*//\' -e \'s/\\n[[:space:]]*//\''), intern = TRUE) %>%
+    tibble(network = .) %>%
+    separate(network, c("interface", "bytes_rx", "packets_rx", "errs_rx", "drop_rx", "fifo_rx", "frame_rx", "compressed_rx", "multicast_rx", "bytes_tx", "packets_tx", "errs_tx", "drop_tx", "fifo_tx", "colls_tx", "carrier_tx", "compressed_tx"), sep = " ", convert = TRUE) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    mutate(config = f) %>%
+    bind_rows(network_data, .)
+}
+```
+
+```{r wifi_networks_net_bytes_rx}
+network_data %>%
+  mutate(bytes_rx = 8 * (bytes_rx - lag(bytes_rx)) / 1000000) %>%
+  drop_na() %>%
+  ggplot(aes(x = ts, y = bytes_rx, color = config)) +
+  geom_line() +
+  ylab("bytes received [Mbps]") +
+  ylim(0, NA) +
+  # scale_y_continuous(trans = "log10") +
+  theme_half_open() +
+  background_grid()
+```
+
+```{r wifi_networks_net_bytes_rx_boxplot, fig.width = 3, fig.height = 2}
+network_data %>%
+  mutate(bytes_rx = 8 * (bytes_rx - lag(bytes_rx)) / 1000000) %>%
+  drop_na() %>%
+  filter(ts >= 200 & ts <= 400) %>%
+  mutate(config = map_chr(config, to_human_name)) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  ggplot(aes(x = bytes_rx, y = config)) +
+  geom_boxplot() +
+  labs(x = "bytes received [Mbps]      ", y = "network type") +
+  xlim(0, 100) +
+  # scale_x_continuous(trans = "log10") +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom")
+```
+
+
+```{r wifi_networks_mem_data}
+mem_data <- NULL
+for (f in experiments) {
+  mem_data <- system(paste('grep -Po "(?<=Free=)[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(mem_usage = .) %>%
+    mutate(mem_usage = 12288 - as.numeric(mem_usage)) %>%
+    mutate(mem_usage = mem_usage / 1024) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(mem_data, .)
+}
+mem_data <- mem_data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+```{r wifi_networks_mem_line}
+mem_data %>%
+  ggplot(aes(x = ts, y = mem_usage, color = config)) +
+  geom_line() +
+  ylim(0, 11.5) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "time [s]", y = "memory usage [GB]     ")
+```
+
+```{r wifi_networks_mem_boxplot, fig.width = 3, fig.height = 2}
+mem_data %>%
+  ggplot(aes(x = mem_usage, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "memory usage [GB]    ", y = "setup")
+```
+
+# Impact of WiFi Distance
+
+```{r setup_wifi_distance}
+to_human_name <- function(name) {
+  if (name == "alyx-wired") {
+    "Wired"
+  } else if (name == "alyx-wireless") {
+    "Near"
+  } else if (name == "alyx-wireless-upstairs") {
+    "Far"
+  } else {
+    name
+  }
+}
+
+wifi_order <- c("Wired", "Near", "Far")
+experiments <- c("alyx-wired", "alyx-wireless", "alyx-wireless-upstairs")
+# experiments <- c("oculus-wireless-dynamic-100-a_n_ac-5ghz", "oculus-wireless-dynamic-100-ax-2_4ghz", "oculus-wireless-dynamic-100-ax-5ghz", "oculus-wireless-dynamic-100-b_g_n-2_4ghz")
+start_time <- 125
+end_time <- 900
+```
+
+```{r wifi_distance_fps_data}
+data <- NULL
+for (f in experiments) {
+  data <- system(paste('grep -Po "(?<=FPS=)[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(fps = .) %>%
+    mutate(fps = as.numeric(fps)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(data, .)
+}
+data <- data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+```{r wifi_distance_fps, fig.width = 3, fig.height = 2}
+my_blues <- RColorBrewer::brewer.pal(3, "Blues")[2:3]
+data %>%
+  filter(config == "Far" | config == "Near") %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  mutate(ts = ts - min(ts)) %>%
+  ggplot(aes(x = ts, y = fps, color = config)) +
+  geom_line() +
+  xlim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = c(0.05, 0.10), legend.direction = "horizontal") +
+  labs(x = "time [s]", y = "frames per second         ") +
+  scale_color_manual(values = my_blues)
+```
+
+```{r wifi_distance_fps_boxplot, fig.width = 3, fig.height = 2}
+data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  ggplot(aes(x = fps, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  labs(x = "frames per second ", y = "AP distance") +
+  theme_half_open() +
+  background_grid() +
+  # scale_x_break(c(10, 50)) +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r wifi_distance_cpu_data}
+cpu_data <- NULL
+for (f in experiments) {
+  cpu_data <- system(paste('grep -Po "(?<=CPU%=)[0-9]+.[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(cpu_util = .) %>%
+    mutate(cpu_util = 100 * as.numeric(cpu_util)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(cpu_data, .)
+}
+cpu_data <- cpu_data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+
+```{r wifi_distance_cpu}
+cpu_data %>%
+  ggplot(aes(x = ts, y = cpu_util, color = config)) +
+  geom_vline(xintercept = start_time, color = "black") +
+  geom_vline(xintercept = end_time, color = "black") +
+  geom_line() +
+  ylim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r wifi_distance_cpu_boxplot, fig.width = 3, fig.height = 2}
+cpu_data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  ggplot(aes(x = cpu_util, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  labs(x = "CPU utilization [%]", y = "AP distance") +
+  theme_half_open() +
+  background_grid()
+```
+
+```{r wifi_distance_gpu_data}
+
+data <- NULL
+for (f in experiments) {
+  data <- system(paste('grep -Po "(?<=GPU%=)[0-9]+.[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(gpu_util = .) %>%
+    mutate(gpu_util = 100 * as.numeric(gpu_util)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(data, .)
+}
+data <- data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+
+```{r wifi_distance_gpu_data_line}
+data %>%
+  ggplot(aes(x = ts, y = gpu_util, color = config)) +
+  geom_vline(xintercept = start_time, color = "black") +
+  geom_vline(xintercept = end_time, color = "black") +
+  geom_line() +
+  ylim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r wifi_distance_gpu_boxplot, fig.width = 3, fig.height = 2}
+data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  ggplot(aes(x = gpu_util, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  labs(y = "AP distance", x = "GPU utilization [%]") +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "none") +
+  scale_color_viridis_d(begin = 0.3, direction = -1)
+```
+
+```{r wifi_distance_network_data}
+network_data <- NULL
+for (f in experiments) {
+  network_data <- system(paste('grep -P "\\s+wlan0\\W"', here("experiments", f, "net_dev.log"), '| tr -s " " | sed -e \'s/^[[:space:]]*//\' -e \'s/\\n[[:space:]]*//\''), intern = TRUE) %>%
+    tibble(network = .) %>%
+    separate(network, c("interface", "bytes_rx", "packets_rx", "errs_rx", "drop_rx", "fifo_rx", "frame_rx", "compressed_rx", "multicast_rx", "bytes_tx", "packets_tx", "errs_tx", "drop_tx", "fifo_tx", "colls_tx", "carrier_tx", "compressed_tx"), sep = " ", convert = TRUE) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    mutate(config = f) %>%
+    bind_rows(network_data, .)
+}
+```
+
+```{r wifi_distance_net_bytes_rx}
+network_data %>%
+  mutate(bytes_rx = 8 * (bytes_rx - lag(bytes_rx)) / 1000000) %>%
+  drop_na() %>%
+  ggplot(aes(x = ts, y = bytes_rx, color = config)) +
+  geom_line() +
+  ylab("bytes received [Mbps]") +
+  ylim(0, NA) +
+  # scale_y_continuous(trans = "log10") +
+  theme_half_open() +
+  background_grid()
+```
+
+```{r wifi_distance_net_bytes_rx_boxplot, fig.width = 3, fig.height = 2}
+network_data %>%
+  mutate(bytes_rx = 8 * (bytes_rx - lag(bytes_rx)) / 1000000) %>%
+  drop_na() %>%
+  filter(ts >= 200 & ts <= 400) %>%
+  mutate(config = map_chr(config, to_human_name)) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  ggplot(aes(x = bytes_rx, y = config)) +
+  geom_boxplot() +
+  labs(x = "bytes received [Mbps]      ", y = "AP distance") +
+  xlim(0, 100) +
+  # scale_x_continuous(trans = "log10") +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom")
+```
+
+
+```{r wifi_distance_mem_data}
+mem_data <- NULL
+for (f in experiments) {
+  mem_data <- system(paste('grep -Po "(?<=Free=)[0-9]+"', here("experiments", f, "logcat_VrApi.log")), intern = TRUE) %>%
+    tibble(mem_usage = .) %>%
+    mutate(mem_usage = 12288 - as.numeric(mem_usage)) %>%
+    mutate(mem_usage = mem_usage / 1024) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(mem_data, .)
+}
+mem_data <- mem_data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+```{r wifi_distance_mem_line}
+mem_data %>%
+  ggplot(aes(x = ts, y = mem_usage, color = config)) +
+  geom_line() +
+  ylim(0, 11.5) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "time [s]", y = "memory usage [GB]     ")
+```
+
+```{r wifi_distance_mem_boxplot, fig.width = 3, fig.height = 2}
+mem_data %>%
+  ggplot(aes(x = mem_usage, y = config)) +
+  geom_boxplot() +
+  xlim(0, NA) +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "memory usage [GB]    ", y = "setup")
+```
+
