@@ -1,0 +1,10 @@
+PS C:\Users\atl_gaming\measuring-the-metaverse> adb shell getprop ro.build.version.release
+10
+PS C:\Users\atl_gaming\measuring-the-metaverse> adb shell getprop ro.build.version.sdk
+29
+
+version / runtime version
+47.0.0.282.341.428237138
+
+os version
+user-49068160386600320
