@@ -9,7 +9,9 @@ library(knitr)
 library(forcats)
 library(data.table)
 library(cowplot)
+library(ggbreak)
 library(gghighlight)
+library(ggtext)
 library(zoo)
 library(RColorBrewer)
 
@@ -35,7 +37,7 @@ data %>%
   ylim(0, 90) +
   theme_half_open() +
   background_grid() +
-  labs(x = "time [s]", y = "frames per second     ")
+  labs(x = "Time [s]", y = "Frames per second     ")
 ```
 
 ![](README_files/figure-gfm/baseline_fps-1.svg)<!-- -->
@@ -52,7 +54,7 @@ data %>%
   ylim(0, 50) +
   theme_half_open() +
   background_grid() +
-  labs(x = "time [s]", y = "CPU utilization     ")
+  labs(x = "Time [s]", y = "CPU utilization     ")
 ```
 
 ![](README_files/figure-gfm/baseline_cpu-1.svg)<!-- -->
@@ -69,7 +71,7 @@ data %>%
   ylim(0, 100) +
   theme_half_open() +
   background_grid() +
-  labs(x = "time [s]", y = "GPU utilization     ")
+  labs(x = "Time [s]", y = "GPU utilization     ")
 ```
 
 ![](README_files/figure-gfm/baseline_gpu-1.svg)<!-- -->
@@ -87,12 +89,156 @@ data %>%
   ylim(0, 11.5) +
   theme_half_open() +
   background_grid() +
-  labs(x = "time [s]", y = "memory usage [GB]     ")
+  labs(x = "Time [s]", y = "Memory usage [GB]     ")
 ```
 
 ![](README_files/figure-gfm/baseline_mem-1.svg)<!-- -->
 
 # Local vs. Streaming
+
+``` r
+to_human_name <- function(name) {
+  if (name == "beat-headset-wirelessadb") {
+    "Local"
+  } else if (name == "beat-pc-wiredadb") {
+    "Wired"
+  } else if (name == "beat-pc-wirelessadb") {
+    "Wireless"
+  } else {
+    name
+  }
+}
+
+experiments <- c("beat-headset-wirelessadb", "beat-pc-wiredadb", "beat-pc-wirelessadb")
+```
+
+``` r
+data <- NULL
+for (f in experiments) {
+  data <- system(paste('grep -Po "(?<=level: )[0-9]+"', here("experiments", f, "battery.log")), intern = TRUE) %>%
+    tibble(battery = .) %>%
+    mutate(battery = as.numeric(battery)) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(data, .)
+}
+data <- data %>%
+  mutate(config = map_chr(config, to_human_name))
+```
+
+``` r
+colors <- RColorBrewer::brewer.pal(3, "Greens")[2:3]
+tmax <- 1500
+tmin <- 500
+data %>%
+  group_by(config) %>%
+  filter(ts > tmin & ts < tmax) %>%
+  mutate(ts = ts - min(ts)) %>%
+  filter(config != "Wired") %>%
+  mutate(rel_battery = battery / max(battery)) %>%
+  ggplot(aes(x = ts, y = rel_battery, color = config)) +
+  geom_line() +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = c(0.05, 0.40)) +
+  ylim(0, NA) +
+  labs(x = "Time [s]", y = "Rel. battery charge    ") +
+  scale_color_manual(name = "Config", values = colors)
+```
+
+![](README_files/figure-gfm/local_vs_streaming_battery-1.svg)<!-- -->
+
+``` r
+data %>%
+  filter(ts > tmin & ts < tmax) %>%
+  mutate(ts = ts - min(ts)) %>%
+  group_by(config) %>%
+  summarize(max = max(battery), min = min(battery), diff = max - min, diff_per_minute = 60 * diff / (tmax - tmin), max_play_time = 100 / diff_per_minute)
+```
+
+    ## # A tibble: 3 × 6
+    ##   config     max   min  diff diff_per_minute max_play_time
+    ##   <chr>    <dbl> <dbl> <dbl>           <dbl>         <dbl>
+    ## 1 Local       92    81    11            0.66          152.
+    ## 2 Wired       72    72     0            0             Inf 
+    ## 3 Wireless    77    64    13            0.78          128.
+
+``` r
+data %>%
+  filter(config != "Wired") %>%
+  group_by(config) %>%
+  filter(ts > tmin & ts < tmax) %>%
+  mutate(ts = ts - min(ts)) %>%
+  group_by(config) %>%
+  summarize(max = max(battery), min = min(battery), diff = max - min, diff_per_minute = 60 * diff / (tmax - tmin), max_play_time = 100 / diff_per_minute) %>%
+  ggplot(aes(x = max_play_time, y = config)) +
+  geom_col() +
+  theme_half_open() +
+  background_grid() +
+  labs(x = "Approx. maximum battery life [m]                ", y = "Config")
+```
+
+![](README_files/figure-gfm/local_vs_streaming_battery_play_time-1.svg)<!-- -->
+
+### Controllers
+
+``` r
+data <- NULL
+for (f in experiments) {
+  data <- system(paste("grep -Po '(?<=Type:)\\s+(Left|Right),.+Battery:\\s+[0-9]+(?=%)'", here("experiments", f, "OVRRemoteService.log"), "| tr -s ' ' | sed -e \'s/^[[:space:]]*//\' -e \'s/\\n[[:space:]]*//\' | cut -d' ' -f 1,5"), intern = TRUE) %>%
+    tibble(battery = .) %>%
+    separate(battery, c("hand", "level"), convert = TRUE) %>%
+    group_by(hand) %>%
+    mutate(ts = 0:(n() - 1)) %>%
+    select(ts, everything()) %>%
+    mutate(config = f) %>%
+    bind_rows(data, .)
+}
+data %>%
+  ggplot(aes(x = ts, y = level, color = config, shape = hand, group = interaction(config, hand))) +
+  geom_line() +
+  ylim(0, NA) +
+  theme_half_open() +
+  background_grid()
+```
+
+![](README_files/figure-gfm/local_vs_streaming_battery_controllers_data-1.svg)<!-- -->
+
+``` r
+d <- data %>%
+  group_by(hand, config) %>%
+  summarize(max = max(level), min = min(level), diff = max - min, diff_per_minute = 60 * diff / (tmax - tmin), max_play_time = 100 / diff_per_minute) %>%
+  group_by(config) %>%
+  print()
+```
+
+    ## `summarise()` has grouped output by 'hand'. You can override using the
+    ## `.groups` argument.
+
+    ## # A tibble: 6 × 7
+    ## # Groups:   config [3]
+    ##   hand  config                     max   min  diff diff_per_minute max_play_time
+    ##   <chr> <chr>                    <int> <int> <int>           <dbl>         <dbl>
+    ## 1 Left  beat-headset-wirelessadb    28    25     3            0.18          556.
+    ## 2 Left  beat-pc-wiredadb            37    33     4            0.24          417.
+    ## 3 Left  beat-pc-wirelessadb         31    27     4            0.24          417.
+    ## 4 Right beat-headset-wirelessadb    27    25     2            0.12          833.
+    ## 5 Right beat-pc-wiredadb            38    34     4            0.24          417.
+    ## 6 Right beat-pc-wirelessadb         32    27     5            0.3           333.
+
+``` r
+d %>%
+  summarize(max_play_time = max(max_play_time)) %>%
+  print()
+```
+
+    ## # A tibble: 3 × 2
+    ##   config                   max_play_time
+    ##   <chr>                            <dbl>
+    ## 1 beat-headset-wirelessadb          833.
+    ## 2 beat-pc-wiredadb                  417.
+    ## 3 beat-pc-wirelessadb               417.
 
 ``` r
 to_human_name <- function(name) {
@@ -148,7 +294,7 @@ data %>%
   ggplot(aes(x = fps, y = config)) +
   geom_boxplot() +
   xlim(0, NA) +
-  labs(x = "frames per second", y = "setup") +
+  labs(x = "Frames per second", y = "Setup") +
   theme_half_open() +
   background_grid() +
   theme(legend.position = "bottom") +
@@ -193,7 +339,7 @@ cpu_data %>%
   ggplot(aes(x = cpu_util, y = config)) +
   geom_boxplot() +
   xlim(0, NA) +
-  labs(x = "CPU utilization [%]", y = "setup") +
+  labs(x = "CPU utilization [%]", y = "Setup") +
   theme_half_open() +
   background_grid()
 ```
@@ -236,7 +382,7 @@ data %>%
   ggplot(aes(x = gpu_util, y = config)) +
   geom_boxplot() +
   xlim(0, NA) +
-  labs(y = "setup", x = "GPU utilization [%]") +
+  labs(y = "Setup", x = "GPU utilization [%]") +
   theme_half_open() +
   background_grid() +
   theme(legend.position = "none") +
@@ -244,6 +390,97 @@ data %>%
 ```
 
 ![](README_files/figure-gfm/local_vs_stream_gpu_boxplot-1.svg)<!-- -->
+
+``` r
+data <- read_csv(here("experiments", "beat-pc-wiredadb", "usb_packet_data.csv"))
+```
+
+    ## Rows: 7053933 Columns: 7
+    ## ── Column specification ────────────────────────────────────────────────────────
+    ## Delimiter: ","
+    ## chr (4): Source, Destination, Protocol, Info
+    ## dbl (3): No., Time, Length
+    ## 
+    ## ℹ Use `spec()` to retrieve the full column specification for this data.
+    ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+``` r
+data %>%
+  filter(Source == "host") %>%
+  mutate(second = as.integer(Time)) %>%
+  group_by(second) %>%
+  summarize(Mbps = 8 * sum(Length) / 1000000) %>%
+  ggplot(aes(x = second, y = Mbps)) +
+  geom_line() +
+  theme_half_open() +
+  background_grid()
+```
+
+![](README_files/figure-gfm/usb_data-1.svg)<!-- -->
+
+``` r
+data %>%
+  filter(Source == "host") %>%
+  mutate(second = as.integer(Time)) %>%
+  group_by(second) %>%
+  summarize(Mbps = 8 * sum(Length) / 1000000) %>%
+  ggplot(aes(x = Mbps)) +
+  geom_boxplot() +
+  theme_half_open() +
+  background_grid()
+```
+
+![](README_files/figure-gfm/usb_data-2.svg)<!-- -->
+
+``` r
+data %>%
+  filter(Source == "host") %>%
+  mutate(second = as.integer(Time)) %>%
+  group_by(second) %>%
+  summarize(Mbps = 8 * sum(Length) / 1000000) %>%
+  ungroup() %>%
+  summarize(p25 = quantile(Mbps, 0.25), p50 = quantile(Mbps, 0.5), p75 = quantile(Mbps, 0.75))
+```
+
+    ## # A tibble: 1 × 3
+    ##     p25   p50   p75
+    ##   <dbl> <dbl> <dbl>
+    ## 1  90.5  102.  110.
+
+``` r
+data %>%
+  mutate(mode = ifelse(Source == "host", "receive", ifelse(Destination == "host", "send", "other"))) %>%
+  filter(mode != "other") %>%
+  mutate(second = as.integer(Time)) %>%
+  group_by(mode, second) %>%
+  summarize(Mbps = 8 * sum(Length) / 1000000) %>%
+  ggplot(aes(x = second, y = Mbps, color = mode)) +
+  geom_line() +
+  theme_half_open() +
+  background_grid()
+```
+
+    ## `summarise()` has grouped output by 'mode'. You can override using the
+    ## `.groups` argument.
+
+![](README_files/figure-gfm/usb_data-3.svg)<!-- -->
+
+``` r
+data %>%
+  filter(Source == "host") %>%
+  mutate(second = as.integer(Time)) %>%
+  group_by(Destination, second) %>%
+  summarize(Mbps = 8 * sum(Length) / 1000000) %>%
+  ggplot(aes(x = second, y = Mbps, color = Destination)) +
+  geom_line() +
+  theme_half_open() +
+  background_grid()
+```
+
+    ## `summarise()` has grouped output by 'Destination'. You can override using the
+    ## `.groups` argument.
+
+![](README_files/figure-gfm/usb_data-4.svg)<!-- -->
 
 ``` r
 network_data <- NULL
@@ -263,7 +500,7 @@ network_data %>%
   drop_na() %>%
   ggplot(aes(x = ts, y = bytes_rx, color = config)) +
   geom_line() +
-  ylab("bytes received [Mbps]") +
+  ylab("Bytes received [Mbps]") +
   ylim(0, NA) +
   # scale_y_continuous(trans = "log10") +
   theme_half_open() +
@@ -280,7 +517,7 @@ network_data %>%
   mutate(config = map_chr(config, to_human_name)) %>%
   ggplot(aes(x = bytes_rx, y = config)) +
   geom_boxplot() +
-  labs(x = "bytes received [Mbps]", y = "setup") +
+  labs(x = "Bytes received [Mbps]", y = "Setup") +
   xlim(0, 100) +
   # scale_x_continuous(trans = "log10") +
   theme_half_open() +
@@ -313,7 +550,7 @@ mem_data %>%
   ylim(0, 11.5) +
   theme_half_open() +
   background_grid() +
-  labs(x = "time [s]", y = "memory usage [GB]     ")
+  labs(x = "Time [s]", y = "Memory usage [GB]     ")
 ```
 
 ![](README_files/figure-gfm/local_vs_stream_mem_line-1.svg)<!-- -->
@@ -325,7 +562,7 @@ mem_data %>%
   xlim(0, NA) +
   theme_half_open() +
   background_grid() +
-  labs(x = "memory usage [GB]", y = "setup")
+  labs(x = "Memory usage [GB]", y = "Setup")
 ```
 
 ![](README_files/figure-gfm/local_vs_stream_mem_boxplot-1.svg)<!-- -->
@@ -391,9 +628,11 @@ data %>%
   filter(ts >= start_time & ts <= end_time) %>%
   mutate(config = factor(config, levels = wifi_order)) %>%
   ggplot(aes(x = fps, y = config)) +
+  # geom_vline(xintercept = 72, color = "green") +
   geom_boxplot() +
   xlim(0, NA) +
-  labs(x = "frames per second ", y = "network type") +
+  labs(x = "Frames per second ", y = "Network type") +
+  # scale_x_break(breaks = c(15, 55), scales = 2) +
   theme_half_open() +
   background_grid() +
   # scale_x_break(c(10, 50)) +
@@ -402,6 +641,23 @@ data %>%
 ```
 
 ![](README_files/figure-gfm/wifi_networks_fps_boxplot-1.svg)<!-- -->
+
+``` r
+data %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  group_by(config) %>%
+  summarize(min = min(fps), p01 = quantile(fps, 0.01), p05 = quantile(fps, 0.05), p10 = quantile(fps, 0.1), mean = mean(fps), median = median(fps), max = max(fps))
+```
+
+    ## # A tibble: 5 × 8
+    ##   config          min   p01   p05   p10  mean median   max
+    ##   <fct>         <dbl> <dbl> <dbl> <dbl> <dbl>  <dbl> <dbl>
+    ## 1 2.4GHz WiFi 4    59  65.2    68    70  71.4     72    73
+    ## 2 5GHz WiFi 5      72  72      72    72  72       72    72
+    ## 3 5GHz WiFi 5/6    69  71.2    72    72  72.5     73    73
+    ## 4 2.4GHz WiFi 6    70  70.2    72    72  72.0     72    72
+    ## 5 5GHz WiFi 6      72  73      73    73  73.0     73    73
 
 ``` r
 cpu_data <- NULL
@@ -440,7 +696,7 @@ cpu_data %>%
   ggplot(aes(x = cpu_util, y = config)) +
   geom_boxplot() +
   xlim(0, NA) +
-  labs(x = "CPU utilization [%]", y = "network type") +
+  labs(x = "CPU utilization [%]", y = "Network type") +
   theme_half_open() +
   background_grid()
 ```
@@ -484,7 +740,7 @@ data %>%
   ggplot(aes(x = gpu_util, y = config)) +
   geom_boxplot() +
   xlim(0, NA) +
-  labs(y = "network type", x = "GPU utilization [%]") +
+  labs(y = "Network type", x = "GPU utilization [%]") +
   theme_half_open() +
   background_grid() +
   theme(legend.position = "none") +
@@ -511,7 +767,7 @@ network_data %>%
   drop_na() %>%
   ggplot(aes(x = ts, y = bytes_rx, color = config)) +
   geom_line() +
-  ylab("bytes received [Mbps]") +
+  ylab("Bytes received [Mbps]") +
   ylim(0, NA) +
   # scale_y_continuous(trans = "log10") +
   theme_half_open() +
@@ -531,7 +787,7 @@ network_data %>%
   mutate(config = factor(config, levels = wifi_order)) %>%
   ggplot(aes(x = bytes_rx, y = config)) +
   geom_boxplot() +
-  labs(x = "bytes received [Mbps]      ", y = "network type") +
+  labs(x = "Bytes received [Mbps]      ", y = "Network type") +
   xlim(0, 100) +
   # scale_x_continuous(trans = "log10") +
   theme_half_open() +
@@ -540,6 +796,26 @@ network_data %>%
 ```
 
 ![](README_files/figure-gfm/wifi_networks_net_bytes_rx_boxplot-1.svg)<!-- -->
+
+``` r
+network_data %>%
+  mutate(bytes_rx = 8 * (bytes_rx - lag(bytes_rx)) / 1000000) %>%
+  drop_na() %>%
+  filter(ts >= 200 & ts <= 400) %>%
+  mutate(config = map_chr(config, to_human_name)) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  group_by(config) %>%
+  summarize(mean = mean(bytes_rx), median = median(bytes_rx))
+```
+
+    ## # A tibble: 5 × 3
+    ##   config         mean median
+    ##   <fct>         <dbl>  <dbl>
+    ## 1 2.4GHz WiFi 4  45.9   45.5
+    ## 2 5GHz WiFi 5    82.3   91.1
+    ## 3 5GHz WiFi 5/6  91.1   91.7
+    ## 4 2.4GHz WiFi 6  46.6   47.4
+    ## 5 5GHz WiFi 6    91.1   91.8
 
 ``` r
 mem_data <- NULL
@@ -564,7 +840,7 @@ mem_data %>%
   ylim(0, 11.5) +
   theme_half_open() +
   background_grid() +
-  labs(x = "time [s]", y = "memory usage [GB]     ")
+  labs(x = "Time [s]", y = "Memory usage [GB]     ")
 ```
 
 ![](README_files/figure-gfm/wifi_networks_mem_line-1.svg)<!-- -->
@@ -576,7 +852,7 @@ mem_data %>%
   xlim(0, NA) +
   theme_half_open() +
   background_grid() +
-  labs(x = "memory usage [GB]    ", y = "setup")
+  labs(x = "Memory usage [GB]    ", y = "Setup")
 ```
 
 ![](README_files/figure-gfm/wifi_networks_mem_boxplot-1.svg)<!-- -->
@@ -619,7 +895,7 @@ data <- data %>%
 ```
 
 ``` r
-my_blues <- RColorBrewer::brewer.pal(3, "Blues")[2:3]
+my_colors <- RColorBrewer::brewer.pal(3, "Greens")[2:3]
 data %>%
   filter(config == "Far" | config == "Near") %>%
   filter(ts >= start_time & ts <= end_time) %>%
@@ -630,8 +906,8 @@ data %>%
   theme_half_open() +
   background_grid() +
   theme(legend.position = c(0.05, 0.10), legend.direction = "horizontal") +
-  labs(x = "time [s]", y = "frames per second         ") +
-  scale_color_manual(values = my_blues)
+  labs(x = "Time [s]", y = "Frames per second         ") +
+  scale_color_manual(values = my_colors)
 ```
 
 ![](README_files/figure-gfm/wifi_distance_fps-1.svg)<!-- -->
@@ -643,7 +919,7 @@ data %>%
   ggplot(aes(x = fps, y = config)) +
   geom_boxplot() +
   xlim(0, NA) +
-  labs(x = "frames per second ", y = "AP distance") +
+  labs(x = "Frames per second ", y = "AP distance") +
   theme_half_open() +
   background_grid() +
   # scale_x_break(c(10, 50)) +
@@ -761,7 +1037,7 @@ network_data %>%
   drop_na() %>%
   ggplot(aes(x = ts, y = bytes_rx, color = config)) +
   geom_line() +
-  ylab("bytes received [Mbps]") +
+  ylab("Bytes received [Mbps]") +
   ylim(0, NA) +
   # scale_y_continuous(trans = "log10") +
   theme_half_open() +
@@ -781,7 +1057,7 @@ network_data %>%
   mutate(config = factor(config, levels = wifi_order)) %>%
   ggplot(aes(x = bytes_rx, y = config)) +
   geom_boxplot() +
-  labs(x = "bytes received [Mbps]      ", y = "AP distance") +
+  labs(x = "Bytes received [Mbps]      ", y = "AP distance") +
   xlim(0, 100) +
   # scale_x_continuous(trans = "log10") +
   theme_half_open() +
@@ -792,6 +1068,69 @@ network_data %>%
     ## Warning: Removed 1 rows containing non-finite values (stat_boxplot).
 
 ![](README_files/figure-gfm/wifi_distance_net_bytes_rx_boxplot-1.svg)<!-- -->
+
+``` r
+frankenstein <- network_data %>%
+  mutate(Mbps = 8 * (bytes_rx - lag(bytes_rx)) / 1000000) %>%
+  drop_na() %>%
+  filter(ts >= 200 & ts <= 400) %>%
+  mutate(config = map_chr(config, to_human_name)) %>%
+  mutate(config = factor(config, levels = wifi_order)) %>%
+  select(config, Mbps) %>%
+  filter(config != "Wired")
+
+
+data <- read_csv(here("experiments", "beat-pc-wiredadb", "usb_packet_data.csv"))
+```
+
+    ## Rows: 7053933 Columns: 7
+    ## ── Column specification ────────────────────────────────────────────────────────
+    ## Delimiter: ","
+    ## chr (4): Source, Destination, Protocol, Info
+    ## dbl (3): No., Time, Length
+    ## 
+    ## ℹ Use `spec()` to retrieve the full column specification for this data.
+    ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+``` r
+wired <- "*Wired*<br>*(USB)*"
+my.labels <- c(wired, "Near", "Far")
+
+frankenstein <- data %>%
+  filter(Source == "host") %>%
+  mutate(second = as.integer(Time)) %>%
+  filter(second >= 500 & second <= 1750) %>%
+  group_by(second) %>%
+  summarize(Mbps = 8 * sum(Length) / 1000000) %>%
+  mutate(config = wired) %>%
+  select(config, Mbps) %>%
+  bind_rows(frankenstein)
+
+frankenstein %>%
+  mutate(config = factor(config, levels = my.labels)) %>%
+  ggplot(aes(x = Mbps, y = config)) +
+  geom_boxplot() +
+  labs(x = "Bytes received [Mbps]      ", y = "AP distance") +
+  xlim(0, 100) +
+  # scale_x_continuous(trans = "log10") +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = "bottom") +
+  theme(axis.text.y = element_markdown()) +
+  annotate("rect", xmin = -Inf, xmax = Inf, ymin = .5, ymax = 1.5, alpha = .2)
+```
+
+    ## Warning: Removed 868 rows containing non-finite values (stat_boxplot).
+
+![](README_files/figure-gfm/wifi_distance_bytes_rx_frankenstein-1.svg)<!-- -->
+
+``` r
+# #Plot
+# ggplot(data=samplecounts,aes(variable2,variable1))+
+#   geom_col(color='black')+
+#   scale_x_discrete(labels=my.labels) +
+#   theme(axis.text.y = element_markdown())+
+```
 
 ``` r
 mem_data <- NULL
@@ -816,7 +1155,7 @@ mem_data %>%
   ylim(0, 11.5) +
   theme_half_open() +
   background_grid() +
-  labs(x = "time [s]", y = "memory usage [GB]     ")
+  labs(x = "Time [s]", y = "Memory usage [GB]     ")
 ```
 
 ![](README_files/figure-gfm/wifi_distance_mem_line-1.svg)<!-- -->
@@ -828,7 +1167,7 @@ mem_data %>%
   xlim(0, NA) +
   theme_half_open() +
   background_grid() +
-  labs(x = "memory usage [GB]    ", y = "setup")
+  labs(x = "Memory usage [GB]    ", y = "Setup")
 ```
 
 ![](README_files/figure-gfm/wifi_distance_mem_boxplot-1.svg)<!-- -->

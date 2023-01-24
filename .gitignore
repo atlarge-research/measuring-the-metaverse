@@ -196,3 +196,4 @@ poetry.toml
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,powershell,python
 
 *.pcapng
+usb_packet_data.csv
