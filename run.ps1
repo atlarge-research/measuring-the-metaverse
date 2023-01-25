@@ -1,10 +1,10 @@
 
 # https://xkln.net/blog/powershell-sleep-duration-accuracy-and-windows-timers/
 
-adb shell "cat /proc/version" > version.log
-adb shell "cat /proc/cpuinfo" > cpuinfo.log
+adb shell "cat /proc/version" >> version.log
+adb shell "cat /proc/cpuinfo" >> cpuinfo.log
 
-$VrJob = adb logcat -s VrApi > logcat_VrApi.log &
+$VrJob = adb logcat -s VrApi >> logcat_VrApi.log &
 $HostJob = python .\sample-host-metrics.py &
 
 $Freq = [System.Diagnostics.Stopwatch]::Frequency
@@ -18,7 +18,7 @@ try {
 
         if ($VrJob.State -ne "Running") {
             Write-Host "Oh no! Restarting adb logcat"
-            $VrJob = adb logcat -s VrApi > logcat_VrApi.log &
+            $VrJob = adb logcat -s VrApi >> logcat_VrApi.log &
         }
         if ($HostJob.State -ne "Running") {
             Write-Host "Oh no! Restarting python script"

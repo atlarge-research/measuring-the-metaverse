@@ -14,8 +14,8 @@ def key_or_val(li, key, value, header):
 
 def main():
     start = datetime.now().timestamp()
-    with open("host_gpu_metrics.log", "w+") as f_gpu, open(
-        "host_sys_metrics.log", "w+"
+    with open("host_gpu_metrics.log", "a") as f_gpu, open(
+        "host_sys_metrics.log", "a"
     ) as f_sys:
         f_gpu.write(
             "timestamp,id,uuid,load,memoryUtil,memoryTotal,memoryUsed,memoryFree,driver,name,serial,display_mode,display_active\n"
