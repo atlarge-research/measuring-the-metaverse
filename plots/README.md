@@ -1,5 +1,25 @@
-Plots for Measuring the Metaverse Article
+Figures from “Can My WiFi Handle the Metaverse? A Performance Evaluation
+Of Meta’s Flagship Virtual Reality Hardware”
 ================
+
+# Article Figures
+
+  - [Figure 1](#user-content-figure-1)
+  - [Figure 4](#user-content-baseline-performance)
+  - [Figure 5a](#user-content-figure-5a)
+  - [Figure 5b](#user-content-figure-5b)
+  - [Figure 5c](#user-content-figure-5c)
+  - [Figure 5d](#user-content-figure-5d)
+  - [Figure 6a](#user-content-figure-6a)
+  - [Figure 6b](#user-content-figure-6b)
+  - [Figure 7a](#user-content-figure-7a)
+  - [Figure 7b](#user-content-figure-7b)
+
+# All Content
+
+## Setup
+
+Libraries used for plotting.
 
 ``` r
 library(tidyverse)
@@ -23,7 +43,11 @@ saveplot <- function(filename, ...) {
 here::i_am("plots/README.Rmd")
 ```
 
-# Baseline
+## Baseline Performance
+
+These plots visualize data obtained from the [baseline
+experiment](../experiments/headset-cable-2), in which we play a popular
+game on the Meta Quest Pro under good conditions.
 
 ``` r
 fps <- system(paste('grep -Po "(?<=FPS=)[0-9]+"', here("experiments", "headset-cable-2", "logcat_VrApi.log")), intern = TRUE)
@@ -94,7 +118,9 @@ data %>%
 
 ![](README_files/figure-gfm/baseline_mem-1.svg)<!-- -->
 
-# Local vs. Streaming
+# Local vs Streaming
+
+Translate filenames to human-readable names.
 
 ``` r
 to_human_name <- function(name) {
@@ -112,6 +138,8 @@ to_human_name <- function(name) {
 experiments <- c("beat-headset-wirelessadb", "beat-pc-wiredadb", "beat-pc-wirelessadb")
 ```
 
+Read measurement data into table.
+
 ``` r
 data <- NULL
 for (f in experiments) {
@@ -127,6 +155,10 @@ data <- data %>%
   mutate(config = map_chr(config, to_human_name))
 ```
 
+### Figure 5d
+
+Plot the relative battery usage of the device.
+
 ``` r
 colors <- RColorBrewer::brewer.pal(3, "Greens")[2:3]
 tmax <- 1500
@@ -135,6 +167,7 @@ data %>%
   group_by(config) %>%
   filter(ts > tmin & ts < tmax) %>%
   mutate(ts = ts - min(ts)) %>%
+  mutate(ts = ts / 60) %>%
   filter(config != "Wired") %>%
   mutate(rel_battery = battery / max(battery)) %>%
   ggplot(aes(x = ts, y = rel_battery, color = config)) +
@@ -143,11 +176,13 @@ data %>%
   background_grid() +
   theme(legend.position = c(0.05, 0.40)) +
   ylim(0, NA) +
-  labs(x = "Time [s]", y = "Rel. battery charge    ") +
+  labs(x = "Time [m]", y = "Rel. battery charge    ") +
   scale_color_manual(name = "Config", values = colors)
 ```
 
 ![](README_files/figure-gfm/local_vs_streaming_battery-1.svg)<!-- -->
+
+Print battery usage statistics to use in the article.
 
 ``` r
 data %>%
@@ -163,6 +198,9 @@ data %>%
     ## 1 Local       92    81    11            0.66          152.
     ## 2 Wired       72    72     0            0             Inf 
     ## 3 Wireless    77    64    13            0.78          128.
+
+Plot the expected total battery lifetime based on the observed battery
+levels.
 
 ``` r
 data %>%
@@ -182,6 +220,8 @@ data %>%
 ![](README_files/figure-gfm/local_vs_streaming_battery_play_time-1.svg)<!-- -->
 
 ### Controllers
+
+Plot the battery levels of the controllers for varying configurations.
 
 ``` r
 data <- NULL
@@ -204,6 +244,9 @@ data %>%
 ```
 
 ![](README_files/figure-gfm/local_vs_streaming_battery_controllers_data-1.svg)<!-- -->
+
+Calculate expected battery life for the controllers for varying
+configurations.
 
 ``` r
 d <- data %>%
@@ -240,6 +283,8 @@ d %>%
     ## 2 beat-pc-wiredadb                  417.
     ## 3 beat-pc-wirelessadb               417.
 
+Function for translating filenames into human-readable names.
+
 ``` r
 to_human_name <- function(name) {
   if (name == "headset-cable-2") {
@@ -258,6 +303,8 @@ start_time <- 125
 end_time <- 350
 ```
 
+Reading measurement data into tables.
+
 ``` r
 data <- NULL
 for (f in experiments) {
@@ -272,6 +319,9 @@ for (f in experiments) {
 data <- data %>%
   mutate(config = map_chr(config, to_human_name))
 ```
+
+Exploratory plot showing the frame rate over time for varying
+configurations.
 
 ``` r
 data %>%
@@ -288,6 +338,8 @@ data %>%
 
 ![](README_files/figure-gfm/local_vs_stream_fps-1.svg)<!-- -->
 
+### Figure 5a
+
 ``` r
 data %>%
   filter(ts >= start_time & ts <= end_time) %>%
@@ -302,6 +354,10 @@ data %>%
 ```
 
 ![](README_files/figure-gfm/local_vs_stream_fps_boxplot-1.svg)<!-- -->
+
+### Operational Plot for Figure 5a
+
+Operational plot showing the CPU utilization for varying configurations.
 
 ``` r
 cpu_data <- NULL
@@ -333,6 +389,8 @@ cpu_data %>%
 
 ![](README_files/figure-gfm/local_vs_stream_cpu-1.svg)<!-- -->
 
+### Figure 5b
+
 ``` r
 cpu_data %>%
   filter(ts >= start_time & ts <= end_time) %>%
@@ -345,6 +403,8 @@ cpu_data %>%
 ```
 
 ![](README_files/figure-gfm/local_vs_stream_cpu_boxplot-1.svg)<!-- -->
+
+### Operational Plot for Figure 5b
 
 ``` r
 data <- NULL
@@ -376,6 +436,8 @@ data %>%
 
 ![](README_files/figure-gfm/local_vs_stream_gpu_data_line-1.svg)<!-- -->
 
+### Figure 5c
+
 ``` r
 data %>%
   filter(ts >= start_time & ts <= end_time) %>%
@@ -390,6 +452,8 @@ data %>%
 ```
 
 ![](README_files/figure-gfm/local_vs_stream_gpu_boxplot-1.svg)<!-- -->
+
+### Operational Plot for Figure 5c
 
 ``` r
 data <- read_csv(here("experiments", "beat-pc-wiredadb", "usb_packet_data.csv"))
@@ -623,6 +687,8 @@ data %>%
 
 ![](README_files/figure-gfm/wifi_networks_fps-1.svg)<!-- -->
 
+### Figure 7b
+
 ``` r
 data %>%
   filter(ts >= start_time & ts <= end_time) %>%
@@ -778,6 +844,8 @@ network_data %>%
 
 ![](README_files/figure-gfm/wifi_networks_net_bytes_rx-1.svg)<!-- -->
 
+### Figure 7a
+
 ``` r
 network_data %>%
   mutate(bytes_rx = 8 * (bytes_rx - lag(bytes_rx)) / 1000000) %>%
@@ -894,6 +962,8 @@ data <- data %>%
   mutate(config = map_chr(config, to_human_name))
 ```
 
+### Figure 6b
+
 ``` r
 my_colors <- RColorBrewer::brewer.pal(3, "Greens")[2:3]
 data %>%
@@ -911,6 +981,33 @@ data %>%
 ```
 
 ![](README_files/figure-gfm/wifi_distance_fps-1.svg)<!-- -->
+
+### Figure 1
+
+``` r
+my_colors <- RColorBrewer::brewer.pal(3, "Greens")[2:3]
+data %>%
+  filter(config == "Far" | config == "Near") %>%
+  filter(ts >= start_time & ts <= end_time) %>%
+  mutate(ts = ts - min(ts)) %>%
+  ggplot(aes(x = ts, y = fps, color = config)) +
+  geom_line(size = 1) +
+  xlim(0, NA) +
+  ylim(0, 100) +
+  theme_half_open() +
+  background_grid() +
+  theme(legend.position = c(0.04, 0.85), legend.direction = "horizontal") +
+  labs(x = "Time [s]", y = "Frames per second         ") +
+  scale_color_manual(values = my_colors, name = "Proximity of wireless access point") +
+  # scale_size_manual(values = c(Near = 1, Far = 1), name = "") +
+  annotate("text", x = 0, y = 10, label = "Target frame rate: 72 Hz. Higher is better", fill = "white", label.size = NA, hjust = 0, size = 5)
+```
+
+    ## Warning: Ignoring unknown parameters: fill, label.size
+
+![](README_files/figure-gfm/wifi_distance_fps_p1-1.svg)<!-- -->
+
+### Figure 6a
 
 ``` r
 data %>%
@@ -1003,6 +1100,8 @@ data %>%
 
 ![](README_files/figure-gfm/wifi_distance_gpu_data_line-1.svg)<!-- -->
 
+### Figure 6c
+
 ``` r
 data %>%
   filter(ts >= start_time & ts <= end_time) %>%
@@ -1068,6 +1167,8 @@ network_data %>%
     ## Warning: Removed 1 rows containing non-finite values (stat_boxplot).
 
 ![](README_files/figure-gfm/wifi_distance_net_bytes_rx_boxplot-1.svg)<!-- -->
+
+### Figure 6d
 
 ``` r
 frankenstein <- network_data %>%
