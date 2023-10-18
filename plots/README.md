@@ -169,14 +169,14 @@ data %>%
   mutate(ts = ts - min(ts)) %>%
   mutate(ts = ts / 60) %>%
   filter(config != "Wired") %>%
-  mutate(rel_battery = battery / max(battery)) %>%
+  mutate(rel_battery = battery + 100 - max(battery)) %>%
   ggplot(aes(x = ts, y = rel_battery, color = config)) +
   geom_line() +
   theme_half_open() +
   background_grid() +
   theme(legend.position = c(0.05, 0.40)) +
   ylim(0, NA) +
-  labs(x = "Time [m]", y = "Rel. battery charge    ") +
+  labs(x = "Time [m]", y = "Battery charge") +
   scale_color_manual(name = "Config", values = colors)
 ```
 
